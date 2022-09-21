@@ -91,5 +91,5 @@ function resetSketch() {
 }
  
 function saveArt() {
-  save("myCanvas.png");
+  save("pattern.png");
 }
