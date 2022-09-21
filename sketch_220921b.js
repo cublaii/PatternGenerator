@@ -27,7 +27,7 @@ function setup() {
   strokeCap(SQUARE);
   let saveButton = createButton("Save pattern");
   saveButton.mousePressed(saveArt);
-  background(255);
+  background('rgba(255,255,255, 0)');
   translate(-50, StrokeWeightt/2);
   for(x=0;x<width;x+=size-1){
     for (y=0;y<height;y+=size+0){
@@ -66,7 +66,7 @@ function resetSketch() {
   createCanvas(1000, 1000);
   strokeWeight(StrokeWeightt);
   strokeCap(SQUARE);
-  background(255);
+  background('rgba(255,255,255, 0)');
   translate(-50, StrokeWeightt/2);
   for(x=0;x<width;x+=size-1){
     for (y=0;y<height;y+=size+0){
@@ -91,5 +91,5 @@ function resetSketch() {
 }
  
 function saveArt() {
-  save("myCanvas.jpg");
+  save("myCanvas.png");
 }
